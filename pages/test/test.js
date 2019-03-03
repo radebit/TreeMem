@@ -15,13 +15,13 @@ Page({
 
   },
 
-  swChange: function () {
-    // if (true) {
-    //   this.setData="开启"
-    // }else{
-    //   this.setData = "关闭"
-    // }
-    this.setData({ swNow: 'Hello World' })
+  swChange: function (e) {
+    if (e.detail.value) {
+      this.setData({ swNow: '开启' })
+    }else{
+      this.setData({ swNow: '关闭' })
+    }
+    console.log(e.detail.value);
   },
   /**
    * 生命周期函数--监听页面加载
