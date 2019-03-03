@@ -1,0 +1,31 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>树洞记忆</view>
+  </view>
+</view>
+
+
+<view class="cu-bar tabbar margin-bottom-xl bg-white bottom-bar">
+    <view class="action text-gray" bindtap='toIndex'>
+      <view class='icon-homefill'></view> 首页
+    </view>
+    <view class="action text-blue" bindtap='toShudong'>
+      <view class='icon-cardboardfill'></view> 树洞
+    </view>
+    <view class="action text-gray add-action" bindtap='toComput'>
+      <button class='cu-btn icon-add bg-blue shadow'></button>
+      发布
+    </view>
+    <view class="action text-gray" bindtap='toMessage'>
+      <view class='icon-mark'>
+        <view class='cu-tag badge'>99</view>
+      </view>
+      消息
+    </view>
+    <view class="action text-gray" bindtap='toMyhome'>
+      <view class='icon-my'>
+        <view class='cu-tag badge'></view>
+      </view>
+      我的
+    </view>
+  </view>

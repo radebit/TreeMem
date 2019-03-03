@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/shudong/shudong",
+    "pages/mesg/mesg",
+    "pages/myhome/myhome"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,36 @@
+<!--pages/test/test.wxml-->
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>树洞记忆</view>
+  </view>
+</view>
+
+<view>
+<text>网络开关：</text>
+<switch bindchange='swChange' id='sw1' checked='true'> {{swNow}}</switch>
+</view>
+
+<view class="cu-bar tabbar margin-bottom-xl bg-white bottom-bar">
+    <view class="action text-gray">
+      <view class='icon-homefill'></view> 首页
+    </view>
+    <view class="action text-gray">
+      <view class='icon-cardboardfill'></view> 树洞
+    </view>
+    <view class="action text-gray add-action">
+      <button class='cu-btn icon-add bg-blue shadow'></button>
+      发布
+    </view>
+    <view class="action text-gray">
+      <view class='icon-mark'>
+        <view class='cu-tag badge'>99</view>
+      </view>
+      消息
+    </view>
+    <view class="action text-gray">
+      <view class='icon-my'>
+        <view class='cu-tag badge'></view>
+      </view>
+      我的
+    </view>
+  </view>

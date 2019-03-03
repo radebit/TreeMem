@@ -1,0 +1,49 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>树洞记忆</view>
+  </view>
+</view>
+<view class="margin-xl padding-xl bg-white radius shadow-lg">
+  <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="text-center margin-top">
+  <text class="text-grey text-xl">{{motto}}</text>
+</view>
+
+<view>
+<text selectable='true'>这是测试文字，这段文字是可以选择的！</text>
+</view>
+
+<view class="cu-bar tabbar margin-bottom-xl bg-white bottom-bar">
+    <view class="action text-blue" bindtap='toIndex'>
+      <view class='icon-homefill'></view> 首页
+    </view>
+    <view class="action text-gray" bindtap='toShudong'>
+      <view class='icon-cardboardfill'></view> 树洞
+    </view>
+    <view class="action text-gray add-action">
+      <button class='cu-btn icon-add bg-blue shadow'></button>
+      发布
+    </view>
+    <view class="action text-gray">
+      <view class='icon-mark'>
+        <view class='cu-tag badge'>99</view>
+      </view>
+      消息
+    </view>
+    <view class="action text-gray">
+      <view class='icon-my'>
+        <view class='cu-tag badge'></view>
+      </view>
+      我的
+    </view>
+  </view>
