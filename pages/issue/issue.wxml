@@ -9,10 +9,10 @@
     <view class="action text-gray" bindtap='toIndex'>
       <view class='icon-homefill'></view> 首页
     </view>
-    <view class="action text-blue" bindtap='toShudong'>
+    <view class="action text-gray" bindtap='toShudong'>
       <view class='icon-cardboardfill'></view> 树洞
     </view>
-    <view class="action text-gray add-action" bindtap='toIssue'>
+    <view class="action text-blue add-action" bindtap='toIssue'>
       <button class='cu-btn icon-add bg-blue shadow'></button>
       发布
     </view>

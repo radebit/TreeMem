@@ -1,4 +1,4 @@
-// pages/mesg/mesg.js
+// pages/issue/issue.js
 //获取应用实例
 const app = getApp()
 Page({
@@ -66,6 +66,7 @@ Page({
   onShareAppMessage: function () {
 
   },
+
   //页面跳转
   toIndex: function () {
     wx.redirectTo({

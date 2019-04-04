@@ -1,11 +1,14 @@
 // pages/myhome/myhome.js
+//获取应用实例
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    StatusBar: app.globalData.StatusBar,
+    CustomBar: app.globalData.CustomBar,
   },
 
   /**
@@ -62,5 +65,31 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //页面跳转
+  toIndex: function () {
+    wx.redirectTo({
+      url: '../index/index',
+    })
+  },
+  toShudong: function () {
+    wx.redirectTo({
+      url: '../shudong/shudong',
+    })
+  },
+  toIssue: function () {
+    wx.redirectTo({
+      url: '../issue/issue',
+    })
+  },
+  toMesg: function () {
+    wx.redirectTo({
+      url: '../mesg/mesg',
+    })
+  },
+  toMyhome: function () {
+    wx.redirectTo({
+      url: '../myhome/myhome',
+    })
   }
 })

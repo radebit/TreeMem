@@ -72,9 +72,24 @@ Page({
       url: '../index/index',
     })
   },
-  toShudong:function(){
+  toShudong: function () {
     wx.redirectTo({
       url: '../shudong/shudong',
+    })
+  },
+  toIssue: function () {
+    wx.redirectTo({
+      url: '../issue/issue',
+    })
+  },
+  toMesg: function () {
+    wx.redirectTo({
+      url: '../mesg/mesg',
+    })
+  },
+  toMyhome: function () {
+    wx.redirectTo({
+      url: '../myhome/myhome',
     })
   }
 })

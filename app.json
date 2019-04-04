@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/index/index",
     "pages/shudong/shudong",
     "pages/mesg/mesg",
-    "pages/myhome/myhome"
+    "pages/myhome/myhome",
+    "pages/test/test",
+    "pages/issue/issue"
   ],
   "window": {
     "backgroundTextStyle": "light",
